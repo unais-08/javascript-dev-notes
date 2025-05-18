@@ -9,7 +9,7 @@
 - 🧩 [03-objects](./03-objects)  
   _Working with JavaScript objects, properties, and methods_
 
-- 🔄 [04-iterators](./04-iterators)  
+- 🔄 [04-function](./04-function)  
   _Iteration techniques including loops and iterators_
 
 - 🌐 [05-DOM](./DOM/)  
