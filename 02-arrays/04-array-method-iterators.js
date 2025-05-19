@@ -3,7 +3,7 @@
  * Description: Deep dive tutorial on essential JavaScript array methods:
  * forEach, map, filter, find, and reduce.  Explains their purpose,
  * syntax, usage, and differences.
- * Author: AI Assistant
+ * Author: Gemini Assistant
  * Date: 2025-05-19
  */
 
@@ -103,8 +103,8 @@ console.log(names); // Output: ["Alice", "Bob", "Charlie"]
  * **Syntax:**
  * array.filter(callback(element, index, array), thisArg);
  *
- * - Parameters are the same as for `forEach()`.  The callback should return
- * a boolean value:
+ * - Parameters are the same as for `forEach()`.
+ * -  The callback should return a boolean value:
  * -  `true`:  The element is included in the new array.
  * -  `false`: The element is excluded.
  */
