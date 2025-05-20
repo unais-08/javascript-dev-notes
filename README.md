@@ -12,8 +12,11 @@
 - 🔄 [04-function](./04-function)  
   _Iteration techniques including loops and iterators_
 
-- 🔄 [05-JavaScript Execution](./05-javascript-execution)  
+- 🧩 [05-JavaScript-Execution](./05-javascript-execution)  
   _Engineering behind the Javascript code execution_
 
-- 🌐 [05-DOM](./DOM/)  
+- 🧩 [06-asynchronus-JavaScript](./06-asynchronus-javascript/)  
+  _Engineering behind the Javascript code execution_
+
+- 🌐 [07-DOM](./DOM/)  
   _Document Object Model manipulation and event handling_
