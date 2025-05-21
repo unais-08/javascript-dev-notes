@@ -18,5 +18,8 @@
 - 🧩 [06-asynchronus-JavaScript](./06-asynchronus-javascript/)  
   _Engineering behind the Javascript code execution_
 
-- 🌐 [07-DOM](./DOM/)  
+- 🧩 [07-promises](./07-promises/)
+  _Engineering behind the Javascript code execution_
+
+- 🌐 [10-DOM](./DOM/)  
   _Document Object Model manipulation and event handling_
