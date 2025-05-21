@@ -35,6 +35,29 @@ const userProfile = {
 
 console.log("1. User Profile (Object Literal):", userProfile);
 
+// Using new Object()
+const user1 = new Object();
+user1.name = "Unais";
+user1.age = 22;
+
+// Using constructor function
+function UserConstructor(name, age) {
+  this.name = name;
+  this.age = age;
+}
+
+const user2 = new UserConstructor("Unais", 22);
+
+// Using ES6 class
+class UserClass {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+}
+
+const user3 = new UserClass("Unais", 22);
+
 // =========================================================================
 // 2. Accessing Properties: Dot Notation and Bracket Notation
 // =========================================================================
@@ -57,7 +80,10 @@ console.log("1. User Profile (Object Literal):", userProfile);
  */
 console.log("2.1 Name (Dot Notation):", userProfile.name);
 console.log("2.2 City (Bracket Notation):", userProfile.address["city"]);
-console.log("2.3 City (Nested Bracket Notation):", userProfile["address"]["city"]);
+console.log(
+  "2.3 City (Nested Bracket Notation):",
+  userProfile["address"]["city"]
+);
 
 // Accessing with a variable key:
 const keyToAccess = "age";
@@ -74,13 +100,13 @@ console.log("2.4 Age (Variable Key):", userProfile[keyToAccess]);
  */
 
 // 3.1 Adding new properties:
-userProfile.email = "unais@example.com";      // Dot notation
+userProfile.email = "unais@example.com"; // Dot notation
 userProfile["phoneNumber"] = "9876543210"; // Bracket notation
 
 console.log("3.1 Updated Profile (Added Properties):", userProfile);
 
 // 3.2 Updating existing properties:
-userProfile.age = 23;             // Dot notation
+userProfile.age = 23; // Dot notation
 userProfile.address.city = "Pune"; // Dot notation for nested object
 
 console.log("3.2 Updated Profile (Modified Properties):", userProfile);
@@ -116,7 +142,10 @@ console.log("4. Profile After Deleting 'isStudent':", userProfile);
  * returns `false` if the property is inherited.
  */
 console.log("5.1 Has 'email' property? (in):", "email" in userProfile);
-console.log("5.2 Has 'isStudent' property? (hasOwnProperty):", userProfile.hasOwnProperty("isStudent"));
+console.log(
+  "5.2 Has 'isStudent' property? (hasOwnProperty):",
+  userProfile.hasOwnProperty("isStudent")
+);
 
 // =========================================================================
 // 6. Iterating Over Properties: The `for...in` Loop
@@ -132,7 +161,8 @@ console.log("5.2 Has 'isStudent' property? (hasOwnProperty):", userProfile.hasOw
  */
 console.log("6. Iterating with for...in:");
 for (let key in userProfile) {
-  if (userProfile.hasOwnProperty(key)) { // Best practice: Check if it's a direct property
+  if (userProfile.hasOwnProperty(key)) {
+    // Best practice: Check if it's a direct property
     console.log(`  ${key}: ${userProfile[key]}`);
   }
 }
@@ -161,7 +191,8 @@ const calculator = {
    * Multiplies the values of properties 'a' and 'b'.
    * @returns {number} The product of 'a' and 'b'.
    */
-  multiply() { // Shorthand method syntax (ES6)
+  multiply() {
+    // Shorthand method syntax (ES6)
     return this.a * this.b;
   },
 };
@@ -219,7 +250,10 @@ const library = {
   ],
 };
 
-console.log("9. First Book Author First Name:", library.books[0].author.firstName);
+console.log(
+  "9. First Book Author First Name:",
+  library.books[0].author.firstName
+);
 
 // =========================================================================
 // 10. Object Destructuring: Extracting Values with Ease
@@ -314,23 +348,23 @@ console.log("14.3 Entries:", Object.entries(userProfile));
 // =========================================================================
 
 /**
-  * **Merging Objects:**
-  * -  Often, you need to combine the properties of multiple objects into a single object.
-  * -  There are two common ways to achieve this:
-  *
-  * 15.1  **Spread Syntax (...):**
-  * -   The spread syntax allows an iterable (like an array or object) to be expanded in places where zero or more arguments (for function calls) or elements (for array literals) are expected.
-  * -   When used with objects, it creates a shallow copy of the object's properties.
-  *
-  * 15.2  **Object.assign():**
-  * -   The `Object.assign()` method copies all enumerable own properties from one or more source objects to a target object. It returns the modified target object.
-  * -   The target object is the first parameter.
-  * -   Subsequent parameters are the source objects.
-  *
-  * **Important Considerations:**
-  * -  Both spread syntax and `Object.assign()` perform a **shallow** merge.
-  * -  If a property exists in multiple source objects, the value from the last source object will overwrite previous values.
-  */
+ * **Merging Objects:**
+ * -  Often, you need to combine the properties of multiple objects into a single object.
+ * -  There are two common ways to achieve this:
+ *
+ * 15.1  **Spread Syntax (...):**
+ * -   The spread syntax allows an iterable (like an array or object) to be expanded in places where zero or more arguments (for function calls) or elements (for array literals) are expected.
+ * -   When used with objects, it creates a shallow copy of the object's properties.
+ *
+ * 15.2  **Object.assign():**
+ * -   The `Object.assign()` method copies all enumerable own properties from one or more source objects to a target object. It returns the modified target object.
+ * -   The target object is the first parameter.
+ * -   Subsequent parameters are the source objects.
+ *
+ * **Important Considerations:**
+ * -  Both spread syntax and `Object.assign()` perform a **shallow** merge.
+ * -  If a property exists in multiple source objects, the value from the last source object will overwrite previous values.
+ */
 const defaultSettings = {
   theme: "light",
   notifications: true,
