@@ -1,25 +1,19 @@
-# 📚 Table of Contents
+# 📚 JavaScript Learning Repository – Table of Contents
 
-- 📘 [01-basics](./01-basics)  
-  _Fundamental JavaScript basics and core concepts_
+A structured overview of folders documenting my JavaScript learning journey. Each section is well-commented for clarity and future reference.
 
-- 🍎 [02-array](./02-arrays)  
-  _Deep dive into arrays and array methods_
+---
 
-- 🧩 [03-objects](./03-objects)  
-  _Working with JavaScript objects, properties, and methods_
+| 📁 Folder                                                     | 🔍 Description                                                          |
+| ------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| 📘 [01-basics](./01-basics)                                   | Core JavaScript fundamentals and foundational concepts                  |
+| 🍎 [02-arrays](./02-arrays)                                   | In-depth exploration of arrays and their built-in methods               |
+| 🧩 [03-objects](./03-objects)                                 | Understanding JavaScript objects, properties, and behaviors             |
+| 🔄 [04-functions](./04-function)                              | Function declarations, expressions, scope, and iteration techniques     |
+| ⚙️ [05-javascript-execution](./05-javascript-execution)       | How JavaScript code is parsed and executed under the hood               |
+| ⏳ [06-asynchronous-javascript](./06-asynchronous-javascript) | Exploring asynchronous behavior: callbacks, event loop, and concurrency |
+| 📦 [07-promises](./07-promises)                               | Mastering Promises for asynchronous control flow                        |
+| 🧠 [08-this-keyword](./08-this-keyword)                       | Understanding the dynamic nature of the `this` keyword                  |
+| 🌐 [10-DOM](./DOM)                                            | Manipulating the Document Object Model and handling browser events      |
 
-- 🔄 [04-function](./04-function)  
-  _Iteration techniques including loops and iterators_
-
-- 🧩 [05-JavaScript-Execution](./05-javascript-execution)  
-  _Engineering behind the Javascript code execution_
-
-- 🧩 [06-asynchronus-JavaScript](./06-asynchronus-javascript/)  
-  _Engineering behind the Javascript code execution_
-
-- 🧩 [07-promises](./07-promises/)
-  _Engineering behind the Javascript code execution_
-
-- 🌐 [10-DOM](./DOM/)  
-  _Document Object Model manipulation and event handling_
+---
