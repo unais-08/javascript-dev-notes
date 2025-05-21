@@ -278,8 +278,4 @@ setTimeout(() => button.onClick(), 1500); // Output (after 1.5s): Button text: C
  *  4. call, apply & bind are used to share a method with another object (hence the "this" keyword reference would also change accordingly)
  *  5. "this" inside arrow function refers to the enclosing lexical context
  *  6. "this" in DOM points to the HTML element itself on which it is being used
-
-
- 
-
  */
