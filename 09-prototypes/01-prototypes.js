@@ -1,5 +1,5 @@
 /**
- * File: 01-prototypes-deep-dive.js
+ * File: 01-prototypes.js
  * Description: Comprehensive tutorial on JavaScript Prototypes, explaining prototypal
  * inheritance, the prototype chain, the role of '__proto__', 'prototype',
  * and 'new', and how ES6 Classes fit into this model.
