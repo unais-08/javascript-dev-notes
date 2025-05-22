@@ -81,7 +81,7 @@ This is where the `prototype` _property_ on functions becomes crucial.
 
 **Conceptual Flow:**
 
-```
+```js
 function Person(name) {
   this.name = name;
 }
@@ -94,7 +94,6 @@ const alice = new Person("Alice");
 // 2. newObject.[[Prototype]] = Person.prototype;  // Link established here!
 // 3. Person.call(newObject, "Alice"); // 'this.name = "Alice"' adds 'name' to newObject
 // 4. return newObject;
-
 ```
 
 **Diagram:**
@@ -138,10 +137,14 @@ instance ───► myProto ───► Object.prototype ───► null
 
 **Conceptual Flow:**
 
-```
+```js
 class Animal {
-  constructor(name) { this.name = name; }
-  speak() { console.log(`${this.name} makes a sound.`); }
+  constructor(name) {
+    this.name = name;
+  }
+  speak() {
+    console.log(`${this.name} makes a sound.`);
+  }
 }
 // Internally:
 // function Animal(name) { this.name = name; }
@@ -149,14 +152,17 @@ class Animal {
 // Animal.prototype.__proto__ = Object.prototype;
 
 class Dog extends Animal {
-  constructor(name) { super(name); }
-  bark() { console.log("Woof!"); }
+  constructor(name) {
+    super(name);
+  }
+  bark() {
+    console.log("Woof!");
+  }
 }
 // Internally:
 // function Dog(name) { Animal.call(this, name); }
 // Dog.prototype.bark = function() { ... };
 // Dog.prototype.__proto__ = Animal.prototype; // This is the 'extends' magic
-
 ```
 
 **Diagram:**
@@ -190,7 +196,7 @@ You correctly asked how `Array` and `Function` constructors fit in.
 
 **Conceptual Example:**
 
-```
+```js
 // This is how it *conceptually* works, not literal JS code in the engine:
 // Array.prototype = {
 //   map: function() { /* ... */ },
@@ -201,7 +207,7 @@ You correctly asked how `Array` and `Function` constructors fit in.
 
 const myArray = [1, 2, 3]; // Internally: new Array(1, 2, 3)
 // myArray.__proto__ === Array.prototype; // true
-myArray.map(x => x * 2); // map is found on Array.prototype
+myArray.map((x) => x * 2); // map is found on Array.prototype
 
 // Function.prototype = {
 //   call: function() { /* ... */ },
@@ -213,7 +219,6 @@ myArray.map(x => x * 2); // map is found on Array.prototype
 function myFunc() {}
 // myFunc.__proto__ === Function.prototype; // true
 myFunc.call(this, arg); // call is found on Function.prototype
-
 ```
 
 ## 4\. Summary of Prototype Attachment
