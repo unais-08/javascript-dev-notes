@@ -2,8 +2,7 @@
  * File: 02-classes-real-world-examples.js
  * Description: Demonstrates real-world applications of JavaScript ES6 Classes,
  * showcasing inheritance, static methods, getters/setters, and practical scenarios.
- * Author: AI Assistant
- * Date: 2025-05-20
+ * Date: 2025-05-22
  */
 
 // =========================================================================
@@ -18,7 +17,7 @@
  * -   This document provides several practical, real-world examples to illustrate
  * how classes are applied in common scenarios.
  * -   These examples will cover inheritance, static methods, getters/setters,
- * and basic object-oriented design principles.
+ * and basic object-oriented design principles.    
  */
 
 // =========================================================================
