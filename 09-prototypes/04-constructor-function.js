@@ -1,5 +1,5 @@
 /**
- * File: 04-cons-func.js
+ * File: 04-constructor-function.js
  * Description: Comprehensive tutorial on JavaScript Constructor Functions, explaining
  * their definition, creation with the 'new' keyword, role in prototypal inheritance,
  * and comparison to factory functions and ES6 Classes.

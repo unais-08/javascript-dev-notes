@@ -1,5 +1,5 @@
 /**
- * File: 04-factory-functions.js
+ * File: 03-factory-functions.js
  * Description: Comprehensive tutorial on JavaScript Factory Functions, explaining their
  * definition, creation, benefits, and comparison to constructor functions/ES6 Classes.
  * Date: 2025-05-22
